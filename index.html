@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick = "printSpirit()">Show your spirit!</button>
+		<button onclick = "printColor()">Pick a color to show your spirit!</button>
+		
+		
+		<script>
+		    var showSpirit = document.createElement("p");
+		    function printSpirit(){
+		        var askSpirit = prompt("Show some spirit for your favorite team!");
+		        showSpirit.innerHTML =askSpirit;
+		        document.body.appendChild(showSpirit);
+		        showSpirit.style.fontSize = "80px";
+		    }
+            function printColor(){
+		        var askColor = prompt("Pick a color that matches your team!");
+		        showSpirit.style.color = askColor;
+		    }		    
+		    
+		</script>
+	</body>
+</html>
